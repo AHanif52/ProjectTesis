@@ -1,0 +1,89 @@
+body{
+    background: rgb(255, 255, 255);
+}
+
+#side_nav{
+    /* background: linear-gradient(135deg, #00bcd4, #1976d2); Gradient background */
+    background: linear-gradient(135deg, #424242, #000000);
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+    border-top-right-radius: 5px; /* Border radius hanya untuk bagian kanan atas */
+    border-bottom-right-radius: 5px; /* Border radius hanya untuk bagian kanan bawah */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); /* Improved box shadow */
+}
+.content{
+    min-height: 100vh;
+    width: 100%;
+}
+hr.h-color{
+    background: #ffffff;
+}
+
+.stylish-heading {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 50px; /* Add margin space on top */
+}
+.brand-initials {
+    background-color: #ffffff; /* Dark background color */
+    color: #343a40; /* White text color */
+    font-size: 0.8rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.brand-name {
+    color: #ffffff; /* Dark text color */
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.content {
+    background-color: rgb(242, 239, 239);
+    color: #ffffff; /* White text color */
+    padding: 20px; /* Padding for content */
+    border-radius: 5px; /* Rounded corners for content */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); /* Improved box shadow for content */
+    color: #343a40; /* Text color in content */
+}
+
+.dashboard-content h2 {
+    color: #000000; /* Custom color for heading */
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+/* Styling for mobile view toggle button */
+.open-btn {
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.sidebar li.active{
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.sidebar li.active a, .sidebar li.active a:hover {
+    color: #000000;
+   }
+   .sidebar li a{
+    color: #ffffff;
+   }
+   
+   @media(max-width: 767px){
+    #side_nav{
+      margin-left: -250px;
+      position: absolute;
+      min-height: 100vh;
+      z-index: 1;
+   
+    }
+    #side_nav.active{
+      margin-left: 0;
+     }
+    }
+
